@@ -21,5 +21,5 @@ const buttonTwo = buttonContainerTwo
 
 // event listener for button two
 buttonTwo.on("click", function() {
-  window.location.href = "page-one.html";
+  window.location.href = "index.html";
 });

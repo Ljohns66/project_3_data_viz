@@ -47,13 +47,13 @@ for (let i = 0; i < data.length; i++) {
 });
 
 // Create a custom legend control
-const legend = L.control({ position: 'bottomright' });
+const legend = L.control({ position: 'topleft' });
 
 // Function to generate the HTML content for the legend based on colors and labels
 legend.onAdd = function () {
   const div = L.DomUtil.create('div', 'legend');
-  const colors = ['black', 'red', 'yellow', 'violet'];
-  const labels = ['2013', '2014', '2015', 'Other'];
+  const colors = ['black', 'red', 'yellow'];
+  const labels = ['2013', '2014', '2015'];
 
   for (let i = 0; i < colors.length; i++) {
     div.innerHTML +=
@@ -70,4 +70,3 @@ legend.addTo(myMap);
 // CREATE OTHER LAYERS BY YEAR? switch between years
 // Markers color by event type? (need to do a groupby)
 // CREATE RAIN HEAT MAP & FIRE HEAT MAP
-// need to create a postgres database to fufill requirements
